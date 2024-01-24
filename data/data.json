@@ -12,7 +12,8 @@
       "Bootstrap",
       "TailwindCSS",
       "Javascript"
-    ]
+    ],
+    "url": "https://www.youtube.com/@CyberDudeNetworks"
   },
   {
     "photo": "https://yt3.googleusercontent.com/_f3KfeAEdzDQgOVmrRxlRXP6wILAQp9_fkjbuzkTeBAKrhwE99gExsEncOyDSLEnYYRUuTTcsA=s176-c-k-c0x00ffffff-no-rj",
@@ -21,7 +22,8 @@
     "disc": "Learn technology in Tamil in 4K Ultra HD resolution with clear explanations and with proper practical examples. We are providing all our content to the viewers for absolutely free.",
     "subscriber": "54K",
     "rank": 2,
-    "technoliges_Coverd": ["HTML", "CSS", "Javascript", "SQL", "JQuery"]
+    "technoliges_Coverd": ["HTML", "CSS", "Javascript", "SQL", "JQuery"],
+    "url": "https://www.youtube.com/@codebinx"
   },
   {
     "photo": "https://yt3.googleusercontent.com/ytc/AIf8zZT3E_ujuXZc6wSAB7IdbT0cPt3mjKbxDCdjOnD6=s176-c-k-c0x00ffffff-no-rj",
@@ -36,7 +38,8 @@
       "Node JS",
       "Block Chain",
       "Deployment"
-    ]
+    ],
+    "url": "https://www.youtube.com/@EachOneTeachOne"
   },
   {
     "photo": "https://yt3.googleusercontent.com/lMqV4Au-V6YjSRCLR14LeXMoMR1n5e6BCIaiy6QLKEugBZ2bvVcar9EOiZm1z2PJ3zHclmy2=s176-c-k-c0x00ffffff-no-rj",
@@ -45,6 +48,7 @@
     "disc": "Learn technology in Tamil in 4K Ultra HD resolution with clear explanations and with proper practical examples. We are providing all our content to the viewers for absolutely free.",
     "subscriber": "44.7K",
     "rank": 4,
-    "technoliges_Coverd": ["HTML", "CSS", "Javascript", "React-JS", "Node-JS"]
+    "technoliges_Coverd": ["HTML", "CSS", "Javascript", "React-JS", "Node-JS"],
+    "url": "https://www.youtube.com/@Balachandra_in"
   }
 ]

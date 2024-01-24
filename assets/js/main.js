@@ -4,7 +4,7 @@ console.log(data);
 const divEl = document.getElementById("jsonData");
 
 data.forEach((items) => {
-  divEl.innerHTML += `<section class="bg-blue-300 rounded">
+  divEl.innerHTML += `<section class="bg-blue-300 rounded ">
   <div class="flex justify-between py-4">
     <div>
       <img
@@ -42,6 +42,19 @@ data.forEach((items) => {
             <h1>Technoliges Coverd</h1>
           </div>
         </div>
+      </div>
+
+      <div>
+      <a
+              href="${items.url}"
+              class="flex items-center space-x-3 rtl:space-x-reverse"
+            >
+      <img
+        src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
+        alt="youtube-logo"
+        class="rounded-full h-20  "
+      />
+      </a>
       </div>
     </div>
   </div>
