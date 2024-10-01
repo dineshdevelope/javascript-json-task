@@ -4,65 +4,65 @@ console.log(data);
 const divEl = document.getElementById("jsonData");
 
 data.forEach((items) => {
-  divEl.innerHTML += `<section class="bg-blue-300 rounded ">
-  <div class="flex justify-between py-4">
-    <div>
-      <img
-        src="${items.photo}"
-        alt="cyberdudenetworks"
-        class="rounded-full"
-      />
-    </div>
-    <div class="space-y-3">
-      <div>
-        <h1 class="text-white text-4xl">${items.name}</h1>
+  divEl.innerHTML += `
+  <section class="bg-blue-300 rounded-lg my-4 p-4 shadow-lg">
+    <div class="flex flex-col sm:flex-row justify-between items-center space-y-4 sm:space-y-0 sm:space-x-6">
+      <!-- Image Section -->
+      <div class="w-24 h-24 sm:w-32 sm:h-32 flex-shrink-0">
+        <img
+          src="${items.photo}"
+          alt="${items.name}"
+          class="rounded-full w-full h-full object-cover"
+        />
       </div>
-      <div class="text-red-700 font-semibold">
-        <h1>${items.contact}</h1>
-      </div>
-      <div class="text-white font-normal">
-        <p>
+
+      <!-- Information Section -->
+      <div class="flex-grow space-y-3 text-center sm:text-left">
+        <h1 class="text-white text-2xl sm:text-3xl font-bold">${items.name}</h1>
+        <h2 class="text-red-700 text-lg font-semibold">${items.contact}</h2>
+        <p class="text-white text-base">
           ${items.disc}
         </p>
-      </div>
-      <div class="flex justify-around">
-        <div class="text-center">
-          <h1>${items.subscriber}</h1>
-          <h2 class="text-orange-800 text-2xl font-semibold">Subscriber</h2>
-        </div>
-        <div class="text-center">
-          <h1>${items.rank}</h1>
-          <h2 class="text-orange-800 text-2xl font-semibold">Rank</h2>
-        </div>
-        <div>
-        <div >
-            <p>${items.technoliges_Coverd.join(" , ")}.</p>
-          </div>
-          <div class="text-orange-800 text-xl font-semibold text-center">
-            <h1>Technoliges Coverd</h1>
-          </div>
-        </div>
-      </div>
 
-      <div>
-      <a
-              href="${items.url}"
-              class="flex items-center space-x-3 rtl:space-x-reverse"
-            >
-      <img
-        src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
-        alt="youtube-logo"
-        class="rounded-full h-20  "
-      />
-      </a>
+        <!-- Stats Section -->
+        <div class="flex justify-center sm:justify-start space-x-6 mt-4">
+          <div class="text-center">
+            <h1 class="text-lg font-bold">${items.subscriber}</h1>
+            <h2 class="text-orange-800 text-xl">Subscribers</h2>
+          </div>
+          <div class="text-center">
+            <h1 class="text-lg font-bold">${items.rank}</h1>
+            <h2 class="text-orange-800 text-xl">Rank</h2>
+          </div>
+          <div class="text-center">
+            <h1 class="text-lg font-bold">${items.technoliges_Coverd.join(
+              ", "
+            )}</h1>
+            <h2 class="text-orange-800 text-xl">Technologies Covered</h2>
+          </div>
+        </div>
+
+        <!-- YouTube Link Section -->
+        <div class="mt-4">
+          <a href="${
+            items.url
+          }" target="_blank" class="flex justify-center sm:justify-start items-center space-x-3">
+            <img
+              src="https://static.vecteezy.com/system/resources/previews/018/930/572/non_2x/youtube-logo-youtube-icon-transparent-free-png.png"
+              alt="YouTube Logo"
+              class="rounded-full h-16 w-16"
+            />
+            <span class="text-white text-lg font-semibold">Visit Channel</span>
+          </a>
+        </div>
       </div>
     </div>
-  </div>
-</section>;
-`;
+  </section>
+  `;
 });
 
+// Hidden section functionality
 const hiddenEl = document.getElementById("hiddenSection");
 hiddenEl.addEventListener("click", () => {
-  hiddenEl.children[0].classList.remove("hidden");
+  hiddenEl.children[0].classList.toggle("hidden");
 });
